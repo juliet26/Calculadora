@@ -3,8 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calculadora.App">
 	<Application.Resources>
+        <ResourceDictionary>
+            <Style x:Name="UltColumna" TargetType="Button">
+                <Setter Property="BackGround" Value="Orange"></Setter>
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+        </ResourceDictionary>
 
-        
 
-	</Application.Resources>
+
+    </Application.Resources>
 </Application>
