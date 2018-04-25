@@ -4,7 +4,7 @@
              x:Class="Calculadora.App">
 	<Application.Resources>
 
-		<!-- Application resource dictionary -->
+        
 
 	</Application.Resources>
 </Application>

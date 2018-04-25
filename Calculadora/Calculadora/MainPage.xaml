@@ -4,8 +4,46 @@
              xmlns:local="clr-namespace:Calculadora"
              x:Class="Calculadora.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <StackLayout VerticalOptions="FillAndExpand">
+        <Label Text="0"
+               HorizontalTextAlignment="End"
+               Grid.ColumnSpan="4"
+           FontSize="80">
+        </Label>
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        
+            <Button x:Name="C" Text="C"></Button>
+            <Button x:Name="MasMenos" Grid.Column="1" Text="+/-"></Button>
+            <Button x:Name="Porcentaje" Grid.Column="2" Text="%"></Button>
+            <Button x:Name="Div" Grid.Column="3" Text="DIV"></Button>
+            <Button x:Name="Siete" Text="7" Grid.Row="1"></Button>
+            <Button x:Name="Ocho" Grid.Column="1" Grid.Row="1" Text="8"></Button>
+            <Button x:Name="Nueve" Grid.Column="2" Grid.Row="1" Text="9"></Button>
+            <Button x:Name="X" Grid.Column="3" Grid.Row="1" Text="X"></Button>
+            <Button x:Name="Cuatro" Text="4" Grid.Row="2"></Button>
+            <Button x:Name="Cinco" Grid.Column="1" Grid.Row="2" Text="5"></Button>
+            <Button x:Name="Seis" Grid.Column="2" Grid.Row="2" Text="6"></Button>
+            <Button x:Name="Menos" Grid.Column="3" Grid.Row="2" Text="-"></Button>
+            <Button x:Name="Uno" Text="1" Grid.Row="3"></Button>
+            <Button x:Name="Dos" Grid.Column="1" Grid.Row="3" Text="2"></Button>
+            <Button x:Name="Tres" Grid.Column="2" Grid.Row="3" Text="3"></Button>
+            <Button x:Name="Mas" Grid.Column="3" Grid.Row="3" Text="+"></Button>
+            <Button x:Name="Cero" Text="0" Grid.Row="4" Grid.ColumnSpan="2"></Button>
+            <Button x:Name="Punto" Grid.Column="2" Grid.Row="4" Text="."></Button>
+            <Button x:Name="Igual" Grid.Column="3" Grid.Row="4" Text="="></Button>
+        </Grid>
+    </StackLayout>
 </ContentPage>
